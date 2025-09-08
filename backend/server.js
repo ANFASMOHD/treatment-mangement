@@ -5,7 +5,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Mock DB
+//  DB
 let users = [{ id: 1, email: "user@test.com", password: "123456" }];
 let treatments = [
   { id: "t1", name: "Physiotherapy" },

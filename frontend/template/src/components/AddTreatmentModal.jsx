@@ -19,7 +19,7 @@ export default function AddTreatmentModal({ onClose }) {
     dispatch(addTreatment(t));
 
     if (error) {
-      toast.error(error); // show error toast (duplicate treatment, etc.)
+      toast.error(error); // toast
     } else {
       toast.success(`${t.name} added successfully`);
     }
@@ -38,7 +38,7 @@ export default function AddTreatmentModal({ onClose }) {
           </button>
         </div>
 
-        {/* Treatment List */}
+    {/* list treatmnt */}
         <ul className="space-y-3 max-h-60 overflow-y-auto pr-2">
           {catalog.map((t) => (
             <li
@@ -56,7 +56,7 @@ export default function AddTreatmentModal({ onClose }) {
           ))}
         </ul>
 
-        {/* Footer */}
+    {/* foot */}
         <div className="flex justify-end mt-4">
           <button
             onClick={onClose}

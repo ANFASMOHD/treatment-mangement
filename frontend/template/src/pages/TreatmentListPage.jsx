@@ -20,7 +20,7 @@ export default function TreatmentListPage() {
     <>
       <Header />
       <div className="max-w-3xl mx-auto mt-10 bg-white rounded-2xl shadow-lg p-6">
-        {/* Header row */}
+        {/* header row */}
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-semibold text-gray-800">Treatments</h2>
           <button
@@ -31,7 +31,7 @@ export default function TreatmentListPage() {
           </button>
         </div>
 
-        {/* Treatments list */}
+        {/* treatments list */}
         {treatments.length === 0 ? (
           <p className="text-gray-500 text-center py-10">
             No treatments available. Click <span className="font-semibold">Add</span> to add one.
@@ -56,7 +56,7 @@ export default function TreatmentListPage() {
         )}
       </div>
 
-      {/* Add Treatment Modal */}
+    
       {showModal && <AddTreatmentModal onClose={() => setShowModal(false)} />}
     </>
   );

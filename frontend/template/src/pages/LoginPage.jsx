@@ -18,12 +18,12 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 to-blue-200">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
-        {/* Title */}
+        {/* title */}
         <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">
           Login
         </h2>
 
-        {/* Form */}
+       {/* form */}
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
             <input
@@ -53,7 +53,7 @@ export default function LoginPage() {
           </button>
         </form>
 
-        {/* Footer text */}
+        {/* footer text */}
         <p className="text-sm text-gray-500 text-center mt-6">
           Kaizenstar Technologies © {new Date().getFullYear()}
         </p>
